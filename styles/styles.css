@@ -6,10 +6,8 @@
 
 table {
     border: 2px solid black;
-
     border-collapse: collapse;
     width: 600px;
-    /* Ширина таблицы */
     height: 400px;
     margin: 0 auto;
     overflow: auto;
@@ -23,29 +21,29 @@ th {
 
 th {
     background-color: lightblue;
-    /* Цвет заголовков */
+
 }
 
 td {
-   
+
     max-width: 150px;
-    /* Максимальная ширина ячеек */
     overflow: hidden;
-    /* Обрезка содержимого */
     text-overflow: ellipsis;
-    /* Многоточие при обрезке */
     white-space: nowrap;
-    /* Запрет переноса текста */
+
 }
-th[scope="col"]{
-    text-align:center;
+
+th[scope="col"] {
+    text-align: center;
     font-style: italic;
 }
-th[scope="row"]{
-    text-align:right;
+
+th[scope="row"] {
+    text-align: right;
     font-style: bold;
 }
-tfoot td{
+
+tfoot td {
     font-weight: bold;
-font-style: italic;
+    font-style: italic;
 }
