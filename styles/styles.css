@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    border: 2px solid black;
+
+    border-collapse: collapse;
+    width: 600px;
+    /* Ширина таблицы */
+    height: 400px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+td,
+th {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: lightblue;
+    /* Цвет заголовков */
+}
+
+td {
+   
+    max-width: 150px;
+    /* Максимальная ширина ячеек */
+    overflow: hidden;
+    /* Обрезка содержимого */
+    text-overflow: ellipsis;
+    /* Многоточие при обрезке */
+    white-space: nowrap;
+    /* Запрет переноса текста */
+}
