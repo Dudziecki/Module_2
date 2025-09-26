@@ -37,3 +37,15 @@ td {
     white-space: nowrap;
     /* Запрет переноса текста */
 }
+th[scope="col"]{
+    text-align:center;
+    font-style: italic;
+}
+th[scope="row"]{
+    text-align:right;
+    font-style: bold;
+}
+tfoot td{
+    font-weight: bold;
+font-style: italic;
+}
