@@ -7,12 +7,15 @@
 }
 body {
     font-family: 'Roboto', Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
+    
     color: #2e2e2e;
     background-color: #f5f5dd;
 }
-
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
 .profile-image {
     display: block;
     width: 200px;
@@ -59,6 +62,9 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
+}
+#work{
+    margin: 10px 0;
 }
 .work-list {
     list-style: none;
