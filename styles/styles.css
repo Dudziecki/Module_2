@@ -90,3 +90,61 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
+
+
+@media (max-width: 768px) {
+  .nav__logo-label {
+    display: none;
+  }
+
+  .nav__hamburger {
+    display: flex;
+  }
+
+  .nav__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: antiquewhite;
+    width: 100%;
+    padding: 1rem;
+    display: none;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav__item {
+    margin: 0.5rem 0;
+  }
+
+  .nav__toggle:checked ~ .nav__menu {
+    display: block;
+  }
+
+  .nav__toggle:checked + .nav__hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .nav__toggle:checked + .nav__hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav__toggle:checked + .nav__hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+}
+
+@media (max-width: 320px) {
+  .nav__logo-icon {
+    font-size: 1.2rem;
+  }
+
+  .nav__avatar-img {
+    width: 30px;
+    height: 30px;
+  }
+}
