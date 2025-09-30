@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -39,8 +40,8 @@ body {
   align-items: center;
   height: 50px;
   background-color: #007bff;
-  font-size:1rem;
-  color:#fff;
+  font-size: 1rem;
+  color: #fff;
   box-shadow: 5px 5px 15px 5px #C7C7C7;
   border-radius: 5px;
   padding: 5px;
@@ -55,26 +56,28 @@ body {
 .sidebar li {
   list-style: none;
 }
-.header__nav li a
- {
+
+.header__nav li a {
   text-decoration: none;
-  color:#fff;
+  color: #fff;
 }
 
 .sidebar {
   grid-area: sidebar;
   background-color: #e9ecef;
-  font-size:1rem;
+  font-size: 1rem;
   max-height: calc(100vh-100px);
   box-shadow: 5px 5px 11px -6px #fff;
 }
-.sidebar h3{
+
+.sidebar h3 {
   font-size: 1.25rem;
   text-align: center;
 }
-.sidebar li a{
+
+.sidebar li a {
   text-decoration: none;
-  color:#000;
+  color: #000;
 }
 
 .sidebar ul {
@@ -88,10 +91,11 @@ body {
   transition: color 0.3s ease;
 }
 
-.sidebar li:hover a{
-  color:#007bff;
+.sidebar li:hover a {
+  color: #007bff;
 }
-.sidebar__filtersList{
+
+.sidebar__filtersList {
   display: flex;
   height: 80%;
   flex-direction: column;
@@ -157,12 +161,60 @@ body {
   justify-content: center;
   align-items: center;
   overflow: auto;
-  background-color: #999c9f; 
+  background-color: #999c9f;
   color: white;
   padding: 0 15px;
   border-radius: 8px;
-  font-size: 0.875rem; 
+  font-size: 0.875rem;
   max-height: 50px;
 }
 
+@media screen and (max-width:1024px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "footer"
+    ;
+    grid-template-rows: 50px 100px 1fr 50px;
+  }
 
+  .sidebar {
+    max-height: 100px;
+    overflow: auto;
+  }
+
+  .main {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width:768px) {
+  .wrapper {
+    grid-template-columns: 1 fr;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "footer";
+    grid-template-rows: 50px 100px 1fr 50px;
+  }
+
+  .sidebar {
+    max-height: 100px;
+  }
+ .main {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+ }
+}
+
+@media screen and (max-width:430px){
+  .main {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    max-width: 100%;
+  }
+}
