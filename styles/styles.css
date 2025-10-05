@@ -30,6 +30,8 @@ body {
   margin: 20px auto;
   transition: 0.3s ease, background 0.5s ease, opacity 0.3s ease;
   cursor: pointer;
+  opacity: 0;
+  animation: cardLoad 1.5s ease forwards;
 }
 .card:hover{
   transform: scale(1.1) translateY(-10px); 
@@ -53,4 +55,16 @@ body {
   
   text-overflow: ellipsis;
   padding: 0 15px;
+}
+@keyframes cardLoad{
+0%{
+  opacity: 0;
+  transform: rotate(-10deg);
+  background: linear-gradient(to right, #ffcc00, #ff6b6b);
+}
+100%{
+  opacity:1;
+  transform: rotate(0deg);
+  background: linear-gradient(to right, #ff0000, #0000ff);
+}
 }
