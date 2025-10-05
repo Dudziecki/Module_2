@@ -13,6 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background: #f0f0f0; 
 }
 
 .card {
@@ -28,43 +29,70 @@ body {
   justify-content: space-between;
   padding: 15px;
   margin: 20px auto;
-  transition: 0.3s ease, background 0.5s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, background 0.5s ease, opacity 0.3s ease;
   cursor: pointer;
-  opacity: 0;
-  animation: cardLoad 1.5s ease forwards;
+  opacity: 1; 
+  transform: rotate(0deg); 
+  animation: cardLoad 1.5s ease; 
 }
-.card:hover{
-  transform: scale(1.1) translateY(-10px); 
-  opacity: .8;
+
+.card:hover {
+  transform: scale(1.1) translateY(-10px);
+  opacity: 0.8;
   background: linear-gradient(to right, #4ecdc4, #ff6b6b);
-  
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
+
 #card-toggle:checked + .card {
   transform: rotate(10deg) skew(10deg, 5deg) scale(1.2);
 }
 
 .card img {
-  width: 100%;
-  object-fit: cover;
+  width: 0;
+  height: 0;
   max-width: 200px;
-  display: block; 
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
+  animation: imageAppear 1s ease forwards;
+  animation-delay: 1.5s; 
 }
 
 .card p {
   overflow: hidden;
-  
   text-overflow: ellipsis;
   padding: 0 15px;
+  font-size: 0.9em;
+  text-align: center;
 }
-@keyframes cardLoad{
-0%{
-  opacity: 0;
-  transform: rotate(-10deg);
-  background: linear-gradient(to right, #ffcc00, #ff6b6b);
+
+.card h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  text-align: center;
 }
-100%{
-  opacity:1;
-  transform: rotate(0deg);
-  background: linear-gradient(to right, #ff0000, #0000ff);
+
+@keyframes cardLoad {
+  0% {
+    opacity: 0;
+    transform: rotate(-10deg);
+    background: linear-gradient(to right, #ffcc00, #ff6b6b);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+    background: linear-gradient(to right, #ff0000, #0000ff);
+  }
 }
+
+@keyframes imageAppear {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 200px;
+    height: 150px;
+  }
 }
