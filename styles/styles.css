@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+.table-container {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: auto;
+  border: 2px solid black; 
+}
 
 table {
     border: 2px solid black;
@@ -17,6 +24,7 @@ td,
 th {
     border: 1px solid #000;
     border-collapse: collapse;
+    padding: 10px 20px;
 }
 
 th {
@@ -40,7 +48,7 @@ th[scope="col"] {
 
 th[scope="row"] {
     text-align: right;
-    font-style: bold;
+    font-weight: bold;
 }
 
 tfoot td {
