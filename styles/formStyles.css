@@ -72,7 +72,7 @@ input[type="number"] {
 textarea {
     resize: horizontal;
     min-height: 100px;
-    resize: none;
+    
 }
 
 input[type="password"] {
