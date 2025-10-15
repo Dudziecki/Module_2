@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     min-height: 100vh;
     background-color: #f0f2f5;
     margin: 0;
@@ -85,6 +85,8 @@ input[type="text"][disabled] {
 }
 
 input[type="radio"] {
+    display: inline-block;
+    width: 10px;
     margin-right: 10px;
 }
 
