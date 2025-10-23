@@ -8,12 +8,11 @@
 
 html {
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
 }
 
 body {
   background-color: #f4f4f9;
-
+  font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {
@@ -62,8 +61,7 @@ body {
   gap: 15px;
 }
 
-.header__nav li,
-.sidebar li {
+.header__nav li {
   list-style: none;
 }
 
@@ -175,7 +173,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: auto;
   background-color: #999c9f;
   color: white;
   padding: 0 15px;
@@ -213,7 +210,7 @@ body {
 
 @media screen and (max-width:768px) {
   .wrapper {
-    grid-template-columns: 1 fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
       "header"
       "sidebar"
