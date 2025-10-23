@@ -89,7 +89,7 @@ input[type="radio"] {
     margin-right: 10px;
 }
 
-input[type="checkbox"]+label {
+input[type="checkbox"] + label {
     display: inline;
     cursor: pointer;
 }
