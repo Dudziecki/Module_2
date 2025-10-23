@@ -1,125 +1,139 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-    font-family: 'Roboto', Arial, sans-serif;
-    
-    color: #2e2e2e;
-    background-color: #f5f5dd;
+  font-family: "Roboto", Arial, sans-serif;
+  color: #2e2e2e;
+  background-color: #f5f5dd;
 }
-.container{
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
+
+.profile {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
 .profile-image {
-    display: block;
-    width: 200px;
-    height: 200px;
-    border: 2px solid #0000FF;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #0000FF;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 12px 15px;
 }
 
 .profile-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-#personal{
-    margin: 10px;
+
+#personal {
+  margin: 10px;
 }
 
 #personal h2 {
-    position: relative;
-    font-size: 2.2rem;
+  position: relative;
+  font-size: 2.2rem;
 }
 
 #personal h2::before {
-    content: '';
-    position: absolute;
-    left: -15px;
-    top: 0;
-    width: 5px;
-    height: 100%;
-    background-color: red;
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: red;
 }
 
 #personal p::first-letter {
-    color: #008000;
-   
-    font-size: 3em;
-}
-#education{
-    margin:10px 0;
-}
-#contacts{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-#work{
-    margin: 10px 0;
-}
-.work-list {
-    list-style: none;
-    color: #2e2e2e;
+  color: #008000;
+  font-size: 3em;
 }
 
-.work-list>li::before {
-    content: '🏢 ';
-    font-weight: bold;
+#education {
+  margin: 10px 0;
+}
+
+#work {
+  margin: 10px 0;
+}
+
+.work-list {
+  list-style: none;
+  color: #2e2e2e;
+}
+
+.work-list > li::before {
+  content: "🏢 ";
+  font-weight: bold;
 }
 
 .duties {
-    list-style: none;
+  list-style: none;
 }
 
 .duties li::before {
-    content: '-';
-    margin-right: 5px;
+  content: "-";
+  margin-right: 5px;
+}
+
+#contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .links {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .links a {
-    display: inline-block;
-    text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .links a:hover .svg-bg {
-    fill: #ff4500;
+  fill: #ff4500;
 }
 
 .links a:hover .svg-fill {
-    fill: #000;
-}
-
-.centered {
-    text-align: center;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-.letter-spaced {
-    letter-spacing: 2px;
-}
-
-.spaced-text {
-    word-spacing: 5px;
+  fill: #000;
 }
 
 a.contact-link:hover {
-    text-decoration: underline;
-    text-decoration-color: #ff4500;
+  text-decoration: underline;
+  text-decoration-color: #ff4500;
+}
+
+/* Text formatting: centering, uppercase, letter and word spacing */
+
+.centered {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.letter-spaced {
+  letter-spacing: 2px;
+}
+
+.spaced-text {
+  word-spacing: 5px;
 }
