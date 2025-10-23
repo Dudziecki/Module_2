@@ -4,17 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="assets/favicon.ico" type="x-icon">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <title>Stage-4</title>
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <title>Stage-4 Grid layout</title>
 </head>
 
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="header__logo">Logo</div>
-      <nav class="header__nav">
+      <a href="/" class="header__logo">Logo</a>
+      <nav class="header__nav" aria-label="Main navigation">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -26,83 +28,80 @@
 
     <aside class="sidebar">
       <h3>Filters</h3>
-      <ul class="sidebar__filtersList">
-        <li><a href="#">Link 1: Lorem ipsum dolor sit amet.</a></li>
-        <li><a href="#">Link 2: Consectetur adipisicing elit.</a></li>
-        <li><a href="#">Link 3: Rerum similique et laborum.</a></li>
-        <li><a href="#">Link 4: Temporibus non esse maxim.</a></li>
-      </ul>
+      <nav class="sidebar__nav" aria-label="Sidebar filter navigation">
+        <ul class="sidebar__filtersList">
+          <li><a href="#">Link 1: Lorem ipsum dolor sit amet.</a></li>
+          <li><a href="#">Link 2: Consectetur adipisicing elit.</a></li>
+          <li><a href="#">Link 3: Rerum similique et laborum.</a></li>
+          <li><a href="#">Link 4: Temporibus non esse maxim.</a></li>
+        </ul>
+      </nav>
     </aside>
 
     <main class="main">
-      <div class="card">
-        <img src="assets/panda.jpg" alt="">
+      <article class="card">
+        <img src="assets/panda.jpg" alt="Panda shoe by Nike">
         <h2>Nike</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum similique et laborum molestiae temporibus non
-          esse maxim</p>
-        <button>Buy</button>
-      </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <button type="button">Buy</button>
+      </article>
 
-      <div class="card">
-        <img src="assets/panda.jpg" alt="">
+      <article class="card">
+        <img src="assets/panda.jpg" alt="Panda shoe by Nike">
         <h2>Nike</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum similique et laborum molestiae temporibus
-          non esse maxim</p>
-        <button>Buy</button>
-      </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <button type="button">Buy</button>
+      </article>
 
-      <div class="card">
-        <img src="assets/panda.jpg" alt="">
+      <article class="card">
+        <img src="assets/panda.jpg" alt="Panda shoe by Nike">
         <h2>Nike</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum similique et laborum molestiae temporibus
-          non esse maxim</p>
-        <button>Buy</button>
-      </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <button type="button">Buy</button>
+      </article>
 
-      <div class="card">
-        <img src="assets/panda.jpg" alt="">
+      <article class="card">
+        <img src="assets/panda.jpg" alt="Panda shoe by Nike">
         <h2>Nike</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum similique et laborum molestiae temporibus
-          non esse maxim</p>
-        <button>Buy</button>
-      </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <button type="button">Buy</button>
+      </article>
 
-      <div class="card">
-        <img src="assets/panda.jpg" alt="">
+      <article class="card">
+        <img src="assets/panda.jpg" alt="Panda shoe by Nike">
         <h2>Nike</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum similique et laborum molestiae temporibus
-          non esse maxim</p>
-        <button>Buy</button>
-      </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <button type="button">Buy</button>
+      </article>
 
-      <div class="card">
-        <img src="assets/panda.jpg" alt="">
+      <article class="card">
+        <img src="assets/panda.jpg" alt="Panda shoe by Nike">
         <h2>Nike</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum similique et laborum molestiae temporibus
-          non esse maxim</p>
-        <button>Buy</button>
-      </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <button type="button">Buy</button>
+      </article>
 
-      <div class="card">
-        <img src="assets/panda.jpg" alt="">
+      <article class="card">
+        <img src="assets/panda.jpg" alt="Panda shoe by Nike">
         <h2>Nike</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum similique et laborum molestiae temporibus
-          non esse maxim</p>
-        <button>Buy</button>
-      </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <button type="button">Buy</button>
+      </article>
 
-      <div class="card">
-        <img src="assets/panda.jpg" alt="">
+      <article class="card">
+        <img src="assets/panda.jpg" alt="Panda shoe by Nike">
         <h2>Nike</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum similique et laborum molestiae temporibus
-          non esse maxim</p>
-        <button>Buy</button>
-      </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <button type="button">Buy</button>
+      </article>
     </main>
 
     <footer class="footer">
-      <div class="footer__text">Contact Info:mkdudik15@gmail.com</div>
+      <address class="footer__contact">
+        Contact Info: <a href="mailto:mkdudik15@gmail.com">mkdudik15@gmail.com</a>
+      </address>
     </footer>
   </div>
 </body>
+
 </html>
