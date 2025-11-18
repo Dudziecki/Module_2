@@ -89,7 +89,7 @@ input[type="radio"] {
     margin-right: 10px;
 }
 
-input[type="checkbox"] + label {
+input[type="checkbox"]+label {
     display: inline;
     cursor: pointer;
 }
@@ -124,10 +124,6 @@ button:disabled {
 input,
 textarea {
     caret-color: #ff4500;
-}
-
-.error {
-    border-color: #dc3545;
 }
 
 .error-message {
