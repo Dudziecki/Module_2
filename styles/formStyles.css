@@ -125,7 +125,8 @@ textarea {
     caret-color: #ff4500;
 }
 
-.error-message {
+.error-message,
+.error-text {
     color: #dc3545;
     font-size: 0.9em;
     margin-top: -10px;
