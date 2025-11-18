@@ -76,7 +76,6 @@ form.addEventListener("submit", function (e) {
     }
 
     if (formValid) {
-        console.log("Form submitted successfully!");
         this.submit();
     }
 })
