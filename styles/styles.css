@@ -37,10 +37,6 @@ body {
   margin-left: 0.5rem;
 }
 
-.nav__toggle {
-  display: none;
-}
-
 .nav__hamburger {
   display: none;
   flex-direction: column;
@@ -88,6 +84,18 @@ body {
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 @media (max-width: 768px) {
