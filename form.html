@@ -11,25 +11,21 @@
 </head>
 
 <body>
-    <form action="#" method="post" id="contact-form" novalidate>
+    <form action="#" method="post" id="contact-form">
         <fieldset>
             <legend>Connect form</legend>
             <label for="name">Full Name</label>
             <input type="text" name="name" id="name" placeholder="Enter your full name" required minlength="2">
-            <div class="error-text" id="name-error">Name must be at least 2 characters long</div>
 
             <label for="address">Your Address</label>
             <input type="text" id="address" name="address" placeholder="Enter your address" required minlength="2">
-            <div class="error-text" id="address-error">Address must be at least 2 characters long</div>
 
             <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Enter your email" required minlength="6">
-            <div class="error-text">Email must be at least 6 characters long</div>
 
             <label for="phone">Phone number</label>
             <input type="tel" name="phone" id="phone" placeholder="123-456-7890" required
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-            <div class="error-message" id="phone-error">Phone number must match the pattern 123-456-7890.</div>
 
             <label for="country">Chose your country</label>
             <select name="country" id="country" required>
@@ -42,7 +38,7 @@
 
             <label for="age">Age:</label>
             <input type="number" id="age" name="age" value="42" placeholder="Age" required min="0">
-            <div class="error-message" id="age-error">Please enter a valid age.</div>
+
 
             <label>Preferred Contact Method</label>
             <label for="contact-email">Email</label>
@@ -56,20 +52,16 @@
             <label for="password">Password</label>
             <input type="password" id="password" name="password" placeholder="Enter your password" required
                 minlength="2">
-            <div class="error-message" id="password-error">Password must be at least 2 characters long.</div>
 
             <label for="optional">Optional Field (Inactive)</label>
             <input type="text" id="optional" name="optional" placeholder="This field is disabled" disabled>
 
             <input type="checkbox" id="newsletter" name="newsletter" required>
             <label for="newsletter">Subscribe to newsletter</label>
-            <div class="error-message" id="newsletter-error">You must agree to the newsletter.</div>
 
             <button type="submit" id="submitBtn">Submit</button>
         </fieldset>
     </form>
-    
-    <script src="script.js"></script>
 </body>
 
 </html>
