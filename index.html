@@ -1,12 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <title>Stage-4 Grid layout</title>
 </head>
+
 <body>
-    
+  <div class="layout">
+    <header class="header layout__header">
+      <a href="/" class="header__logo">Logo</a>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="#">Home</a></li>
+          <li class="header__nav-item"><a href="#">About</a></li>
+          <li class="header__nav-item"><a href="#">Career</a></li>
+          <li class="header__nav-item"><a href="#">Works</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside class="sidebar layout__sidebar">
+      <h3 class="sidebar__title">Filters</h3>
+      <nav class="sidebar__nav" aria-label="Sidebar filter navigation">
+        <ul class="sidebar__filters-list">
+          <li class="sidebar__item"><a href="#">Link 1: Lorem ipsum dolor sit amet.</a></li>
+          <li class="sidebar__item"><a href="#">Link 2: Consectetur adipisicing elit.</a></li>
+          <li class="sidebar__item"><a href="#">Link 3: Rerum similique et laborum.</a></li>
+          <li class="sidebar__item"><a href="#">Link 4: Temporibus non esse maxim.</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="products layout__main">
+      <article class="product-card">
+        <img src="assets/panda.jpg" alt="Panda shoe by Nike">
+        <h2>Nike</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <button type="button">Buy</button>
+      </article>
+
+      <article class="product-card">
+        <img src="assets/panda.jpg" alt="Panda shoe by Nike">
+        <h2>Nike</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <button type="button">Buy</button>
+      </article>
+
+      <article class="product-card">
+        <img src="assets/panda.jpg" alt="Panda shoe by Nike">
+        <h2>Nike</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <button type="button">Buy</button>
+      </article>
+
+      <article class="product-card">
+        <img src="assets/panda.jpg" alt="Panda shoe by Nike">
+        <h2>Nike</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <button type="button">Buy</button>
+      </article>
+
+      <article class="product-card">
+        <img src="assets/panda.jpg" alt="Panda shoe by Nike">
+        <h2>Nike</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <button type="button">Buy</button>
+      </article>
+
+      <article class="product-card">
+        <img src="assets/panda.jpg" alt="Panda shoe by Nike">
+        <h2>Nike</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <button type="button">Buy</button>
+      </article>
+
+      <article class="product-card">
+        <img src="assets/panda.jpg" alt="Panda shoe by Nike">
+        <h2>Nike</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <button type="button">Buy</button>
+      </article>
+
+      <article class="product-card">
+        <img src="assets/panda.jpg" alt="Panda shoe by Nike">
+        <h2>Nike</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <button type="button">Buy</button>
+      </article>
+    </main>
+
+    <footer class="footer layout__footer">
+      <address class="footer__contact">
+        <p>Contact Info: <a href="mailto:mkdudik15@gmail.com">mkdudik15@gmail.com</a></p>
+      </address>
+    </footer>
+  </div>
 </body>
+
 </html>

@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #f4f4f9;
+  font-family: 'Roboto', sans-serif;
+}
+
+.layout {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: minmax(200px, 400px) 1fr;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer"
+  ;
+  gap: 20px;
+  min-height: 100vh;
+  grid-template-rows: 50px 1fr 50px;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  background-color: #007bff;
+  font-size: 1rem;
+  color: #fff;
+  box-shadow: 5px 5px 15px 5px #C7C7C7;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.header__logo {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.2s ease;
+}
+
+.header__logo:hover {
+  color: #ffffffc7;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 15px;
+}
+
+.header__nav-item {
+  list-style: none;
+}
+
+.header__nav li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.2s ease;
+}
+
+.header__nav li a:hover {
+  color: #ffffffc7;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #e9ecef;
+  font-size: 1rem;
+  max-height: 50%;
+  box-shadow: 5px 5px 11px -6px #fff;
+}
+
+.sidebar__title {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.sidebar ul {
+  list-style: none;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.sidebar li {
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.sidebar li:hover a {
+  color: #007bff;
+}
+
+.sidebar__filters-list {
+  display: flex;
+  height: 80%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.products {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 10px;
+  align-items: stretch;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.product-card img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.product-card p {
+  color: #666;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.product-card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #999c9f;
+  color: white;
+  padding: 0 15px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  max-height: 50px;
+}
+
+.footer__contact a {
+  text-decoration: none;
+  color: #f6f6f6;
+}
+
+@media screen and (max-width:1024px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "footer"
+    ;
+    grid-template-rows: 50px 100px 1fr 50px;
+  }
+
+  .sidebar {
+    max-height: 100px;
+    overflow: auto;
+  }
+
+  .products {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width:768px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "footer";
+    grid-template-rows: 50px 100px 1fr 50px;
+  }
+
+  .sidebar {
+    max-height: 100px;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width:430px) {
+  .header {
+    font-size: 0.8rem;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    max-width: 100%;
+  }
+}
