@@ -1,12 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <title>Table</title>
 </head>
+
 <body>
-    
+  <div class="table-container">
+    <table>
+      <caption>Доставка</caption>
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Возраст</th>
+          <th scope="col">Город</th>
+          <th scope="col">Профессия</th>
+          <th scope="col">Статус</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="row">Анна</th>
+          <td>25</td>
+          <td>Москва, Россия, длинное название города для теста</td>
+          <td>Инженер-программист с длинным описанием профессии</td>
+          <td rowspan="2">Активен</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Боб</th>
+          <td>30</td>
+          <td>Санкт-Петербург, очень длинное название</td>
+          <td>Дизайнер интерфейсов и пользовательских приложений</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Виктор</th>
+          <td>28</td>
+          <td>Екатеринбург, длинное название для обрезки текста</td>
+          <td>Аналитик данных с большим опытом работы</td>
+          <td>Неактивен</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Мария</th>
+          <td>35</td>
+          <td>Новосибирск, Россия, очень длинное название</td>
+          <td>Менеджер проектов с длинным описанием</td>
+          <td>Активен</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Иван</th>
+          <td>40</td>
+          <td>Казань, длинное название для теста обрезки</td>
+          <td>Разработчик программного обеспечения</td>
+          <td>Неактивен</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>Итого</td>
+          <td>1 человек</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <a class="next-link" href="form.html">К форме</a>
 </body>
+
 </html>

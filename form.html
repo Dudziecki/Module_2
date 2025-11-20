@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/formStyles.css">
+</head>
+
+<body>
+    <form action="#" method="post" id="contact-form">
+        <fieldset>
+            <legend>Connect form</legend>
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your full name" required minlength="2">
+
+            <label for="address">Your Address</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address" required minlength="2">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required minlength="6">
+
+            <label for="phone">Phone number</label>
+            <input type="tel" name="phone" id="phone" placeholder="123-456-7890" required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+            <label for="country">Chose your country</label>
+            <select name="country" id="country" required>
+                <option value="" disabled selected></option>
+                <option value="usa">Usa</option>
+                <option value="uk">United Kingdom</option>
+                <option value="cd">Canada</option>
+                <option value="by">Belarus</option>
+            </select>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" value="42" placeholder="Age" required min="0">
+
+            <label>Preferred Contact Method</label>
+            <label for="contact-email">Email</label>
+            <input type="radio" id="contact-email" name="contact-method" value="email" required>
+            <label for="contact-phone">Phone</label>
+            <input type="radio" id="contact-phone" name="contact-method" value="phone">
+
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" placeholder="Enter your comments" required></textarea>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required
+                minlength="2">
+
+            <label for="optional">Optional Field (Inactive)</label>
+            <input type="text" id="optional" name="optional" placeholder="This field is disabled" disabled>
+
+            <input type="checkbox" id="newsletter" name="newsletter" required>
+            <label for="newsletter">Subscribe to newsletter</label>
+
+            <button type="submit" id="submitBtn">Submit</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
